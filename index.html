@@ -17,13 +17,13 @@
         <h2>TOWNSVILLE, QUEENSLAND, AUSTRALIA</h2>
         <nav>
             <ul>
-                <li>ABOUT</li>
-                <li><a href="history.html">HISTORY</a></li>
-                <li><a href="timeline.html">TIMELINE</a></li>
+                <div id="navabout" onclick="aboutExpand(navaboutexp)"><li>ABOUT</li></div>
+                <div id="navaboutexp"><li><a href="history.html">HISTORY</a></li>
+                <li><a href="timeline.html">TIMELINE</a></li></div>
                 <li><a href="news.html">NEWSFEED</a></li>
-                <li>CONCERTS</li>
-                <li><a href="concerts.html">UPCOMING CONCERTS</a></li>
-                <li><a href="repertoire.html">REPERTOIRE</a></li>
+                <div id="navconcerts" onclick="concertsExpand(navconcertsexp)"><li>CONCERTS</li></div>
+                <div id="navconcertsexp"><li><a href="concerts.html">UPCOMING CONCERTS</a></li>
+                <li><a href="repertoire.html">REPERTOIRE</a></li></div>
                 <li><a href="people.html">PEOPLE</a></li>
                 <li><a href="support.html">SUPPORT US</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -37,17 +37,35 @@
     </div>
     
     <div id="band1">
-        <img src="background_bro_05.jpg">
+        <img src="images/home/background_bro_05.jpg">
         <h3>BARRIER REEF ORCHESTRA</h3>
         <h4>A North Queensland Icon</h4>
         <p>Fast becoming one of North Queensland’s cultural jewels, the Barrier Reef Orchestra this year launches its 17th year of performing orchestral music through North Queensland. BRO is a community orchestra consisting of the finest musicians drawn from Townsville and as far afield as Cairns and Mackay.</p>
     </div>
     <div id="band2">
-        <img src="images/home/Queens-Gardens-2017.jpg" height="400px">
+        <div id="image"><img src="images/home/Queens-Gardens-2017.jpg" height="400px"></div>
         <div id="content">
         <h3>Upcoming Concert</h3>
         <p>Co-presented by Townsville City Council, this hugely popular garden concert has become a firm favourite on the events calendar for locals and visitors alike.</p>
         <button type="button" id="buttoninfo"><a href="">More Info</a></button><button type="button" id="buttonconcerts"><a href="concerts.html">Concerts Page</a></button>
+        </div>
+    </div>
+    <div id="band3bg">
+    <div id="band3">
+        <h3>NEWS</h3>
+        <p><a href="news.html">Stay up to date, click to read the latest announcements</a></p>
+    </div>
+    </div>
+    <div id="band4table">
+    <div id="band4">
+        <h3><a href="support.html">Join Us Today!</a></h3>
+        <p>Become a <b>member</b> or <b>player</b>,
+        <br>Become an <b>orchestra benefactor</b>,
+        <br>Become a <b>sponsor</b>,
+        <br>or <b>Donate</b>!</p>
+    </div>
+        <div id="facebook">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&tabs=timeline&width=300&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
     </div>
 </body>

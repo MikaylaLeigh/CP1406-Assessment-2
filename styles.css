@@ -1,5 +1,4 @@
 html {
-    background: #eee;
     font-family: verdana, sans-serif;
 }
 
@@ -9,15 +8,15 @@ body {
 
 ::-webkit-scrollbar-thumb { 
     background-color: #ccc;
-    height:auto;
+    height: auto;
     border-radius: 3px;
 }
 
 ::-webkit-scrollbar { 
-    height:10px;
-    width:10px; 
+    height: 12px;
+    width: 12px; 
     background-color: transparent;
-    border: 8px solid transparent;
+    border: 12px solid transparent;
 }
 
 #sidebar {
@@ -26,7 +25,7 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 125px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     bottom: 0px;
     text-align: center;
@@ -75,6 +74,14 @@ body {
     margin-top: 100px;
 }
 
+#navaboutexp, #navconcertsexp {
+    display: none;
+}
+
+#navaboutexp a, #navconcertsexp a {
+    color: #2fbac3;
+}
+
 #band1 {
     background: #000;
     height: 265px;
@@ -96,7 +103,7 @@ body {
     color: #FFF;
     font-size: 1.3em;
     letter-spacing: 0.2em;
-    margin-left: 250px;
+    margin-left: 40%;
 }
 
 #band1 p {
@@ -106,25 +113,28 @@ body {
     text-align: center;
     margin-top: -10px;
     max-width: 700px;
+    text-shadow: #333 2px 2px 2px;
 }
 
 #band2 {
-    margin-left: 360px;
+    display: table;
+    width: 100%;
     background: #2fbac3;
-    height: 400px;
     min-width: 670px;
     overflow: hidden;
+    padding-top: 3px;
 }
 
-#band2 img {
-    margin-left: 120px;
-}
-
-#band2 #content {
+#image {
+    display: table-cell;
+    padding-left: 360px;
     text-align: center;
-    margin-left: 430px;
-    margin-right: 25px;
-    margin-top: -400px;
+}
+
+#content {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 #band2 h3 {
@@ -154,8 +164,90 @@ body {
     margin-left: 25px;
 }
 
+#band2 button:hover {
+    background: transparent;
+}
+
 #band2 button a {
     text-decoration: none;
     color: #FFF;
     display: block;
+}
+
+#band3bg {
+    background: #555;
+    margin-left: 360px;
+}
+
+#band3 {
+    height: 150px;
+    display: table;
+    width: 100%;
+    min-width: 670px;
+    overflow: hidden;
+}
+
+#band3 h3 {
+    color: #FFF;
+    font-size: 3em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    width: 20%;
+}
+
+#band3 p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#band3 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#band3 a:hover {
+    color: #ff8746;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    display: block;
+}
+
+#band4table {
+    background: #eee;
+    display: table;
+    width: 100%;
+    min-width: 1030px;
+}
+
+#band4 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 360px;
+}
+
+#band4 a {
+    font-size: 2em;
+    color: #555;
+    text-decoration: none;
+}
+
+#band4 a:hover {
+    color: #ff8746;
+}
+
+#band4 p {
+    color: #bbb;
+    font-size: 1.2em;
+}
+
+#band4 b {
+    color: #2fbac3;
+}
+
+#facebook {
+    display: table-cell;
 }
