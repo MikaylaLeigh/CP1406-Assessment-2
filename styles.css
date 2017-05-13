@@ -1,3 +1,4 @@
+/* General CSS*/
 html {
     font-family: verdana, sans-serif;
 }
@@ -30,6 +31,7 @@ body {
     bottom: 0px;
     text-align: center;
     overflow-x: scroll;
+    z-index: 10;
 }
 
 #sidebar h1 {
@@ -81,6 +83,8 @@ body {
 #navaboutexp a, #navconcertsexp a {
     color: #2fbac3;
 }
+
+/* Index Page */
 
 #band1 {
     background: #000;
@@ -250,4 +254,146 @@ body {
 
 #facebook {
     display: table-cell;
+}
+
+/* Timeline */
+#main {
+    margin-left: 360px;
+    min-width: 670px;
+}
+
+#main h3 {
+    margin-left: 60px;
+    letter-spacing: 0.2em;
+    font-size: 2.5em;
+    color: #2fbac3;
+    border-bottom: 5px solid #2fbac3;
+    display: table;
+    padding-right: 50px;
+}
+
+#main img {
+    position: absolute;
+    bottom: 0px;
+}
+
+#main h4 {
+    letter-spacing: 0.2em;
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 50px;
+    text-indent: 20px;
+    color: #ccc;
+    margin-top: -25px;
+}
+
+#x03, #x04, #x06, #x07, #x08, #x09, #x10, #x11, #x12, #x13, #x14, #x15 {
+    color: #FFF;
+    background: #ff8746;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#y2003, #y2004, #y2006, #y2007, #y2008, #y2009, #y2010 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #ff8746;
+    background: #FFF;
+    padding: 15px;
+    border-radius: 30px;
+    color: #444;
+    display: none;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+#y2011, #y2012, #y2013, #y2014, #y2015 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #ff8746;
+    background: #FFF;
+    padding: 15px;
+    border-radius: 30px;
+    color: #444;
+    display: none;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10, #note11, #note12 {
+    position: absolute;
+    font-size: 4.5em;
+    display: block;
+    cursor: pointer;
+    color: dimgrey;
+}
+
+#note1 {
+    bottom: 200px;
+    margin-left: 20px;
+    display: block;
+}
+
+#note2 {
+    bottom: 180px;
+    margin-left: 190px;
+    display: block;
+}
+
+#note3 {
+    bottom: 210px;
+    margin-left: 320px;
+    display: block;
+}
+
+#note4 {
+    bottom: 150px;
+    margin-left: 410px;
+}
+
+#note5 {
+    bottom: 170px;
+    margin-left: 500px
+}
+
+#note6 {
+    bottom: 200px;
+    margin-left: 600px
+}
+
+#note7 {
+    bottom: 220px;
+    margin-left: 720px;
+}
+
+#note8 {
+    bottom: 200px;
+    margin-left: 860px;
+}
+
+#note9 {
+    bottom: 50px;
+    margin-left: 50px;
+}
+
+#note10 {
+    bottom: 25px;
+    margin-left: 150px;
+}
+
+#note11 {
+    bottom: 20px;
+    margin-left: 260px;
+}
+
+#note12 {
+    bottom: 60px;
+    margin-left: 380px;
 }
