@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en" id="timelinehtml">
+<head>
+  <meta charset="utf-8">
+
+  <title>BRO Gallery</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="scripts.js"></script>
+    <div id="sidebar">
+        <img src="images/home/Logo.png" height="200px">
+        <h1>BARRIER REEF ORCHESTRA</h1>
+        <h2>TOWNSVILLE, QUEENSLAND, AUSTRALIA</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <div id="navabout" onclick="aboutExpand(navaboutexp)"><li>ABOUT</li></div>
+                <div id="navaboutexp"><li><a href="history.html">HISTORY</a></li>
+                <li><a href="timeline.html">TIMELINE</a></li></div>
+                <li><a href="news.html">NEWSFEED</a></li>
+                <div id="navconcerts" onclick="concertsExpand(navconcertsexp)"><li>CONCERTS</li></div>
+                <div id="navconcertsexp"><li><a href="concerts.html">UPCOMING CONCERTS</a></li>
+                <li><a href="repertoire.html">REPERTOIRE</a></li></div>
+                <li><a href="people.html">PEOPLE</a></li>
+                <li><a href="support.html">SUPPORT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>
+        </nav>
+    <p>
+    <a href="https://www.facebook.com/nqorchestra/" target="_blank"><img src="images/home/FB-fLogo-Blue-broadcast-2.png" height="25px"></a>
+    <br>© Copyright North Queensland Ensembles Inc. 2017
+    </p>
+    </div>
+    <div id="gallerymain">
+        <h3>Gallery</h3>
+        <div id="table">
+            <button class="buttonleft" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="buttonright" onclick="plusDivs(+1)">&#10095;</button>
+            <div id="gallerydiv">
+        <img class="gallery" src="images/gallery/2008-BRO-Slavonic-Swoon-100.jpg">
+        <img class="gallery" src="images/gallery/2008-BRO-Slavonic-Swoon-107.jpg">
+        <img class="gallery" src="images/gallery/2015-World-Music-Large.jpg">
+        <img class="gallery" src="images/gallery/AmyandBRO.jpg">
+        <img class="gallery" src="images/gallery/Background_BRO_DSC0803.jpg">
+        <img class="gallery" src="images/gallery/crowdinQueensgardens.jpg">
+        <img class="gallery" src="images/gallery/Hot_Summer_Night-185.jpg">
+        <img class="gallery" src="images/gallery/Hot_Summer_Night-365.jpg">
+        <img class="gallery" src="images/gallery/Hot_Summer_Night_106.jpg">
+        <img class="gallery" src="images/gallery/Hot_Summer_Night_29.jpg">
+        <img class="gallery" src="images/gallery/Hot_Summer_Night_38.jpg">
+        <img class="gallery" src="images/gallery/Hot_Summer_Night_56.jpg">
+        <img class="gallery" src="images/gallery/Hot_Summer_Night_66.jpg">
+        <img class="gallery" src="images/gallery/Hot_Summer_Night_88.jpg">
+        <img class="gallery" src="images/gallery/last_night_of_the_proms_bro_dsc0011.jpg">
+        <img class="gallery" src="images/gallery/last_night_of_the_proms_bro_dsc0025.jpg">
+        <img class="gallery" src="images/gallery/last_night_of_the_proms_bro_dsc0566.jpg">
+        <img class="gallery" src="images/gallery/last_night_of_the_proms_bro_dsc0592.jpg">
+        <img class="gallery" src="images/gallery/last_night_of_the_proms_bro_dsc0686.jpg">
+        <img class="gallery" src="images/gallery/P1150778.JPG">
+        <img class="gallery" src="images/gallery/stringswithRaymond.jpg">
+        <img class="gallery" src="images/gallery/windinaction.jpg">
+        
+        <script>
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("gallery");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+        </script>
+        <div style="overflow: auto">&nbsp;</div>
+        </div>
+            </div>
+    </div>
+</body>
+</html>
