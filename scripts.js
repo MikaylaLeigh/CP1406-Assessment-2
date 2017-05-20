@@ -59,6 +59,7 @@ function concertsExpand() {
 
 function click1() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note1.style.color === 'darkorange') {
         note1.style.color = 'dimgrey';
     } else {
@@ -139,6 +140,7 @@ function click1() {
 
 function click2() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note2.style.color === 'darkorange') {
         note2.style.color = 'dimgrey';
     } else {
@@ -219,6 +221,7 @@ function click2() {
 
 function click3() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note3.style.color === 'darkorange') {
         note3.style.color = 'dimgrey';
     } else {
@@ -299,6 +302,7 @@ function click3() {
 
 function click4() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note4.style.color === 'darkorange') {
         note4.style.color = 'dimgrey';
     } else {
@@ -379,6 +383,7 @@ function click4() {
 
 function click5() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note5.style.color === 'darkorange') {
         note5.style.color = 'dimgrey';
     } else {
@@ -459,6 +464,7 @@ function click5() {
 
 function click6() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note6.style.color === 'darkorange') {
         note6.style.color = 'dimgrey';
     } else {
@@ -539,6 +545,7 @@ function click6() {
 
 function click7() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note7.style.color === 'darkorange') {
         note7.style.color = 'dimgrey';
     } else {
@@ -619,6 +626,7 @@ function click7() {
 
 function click8() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note8.style.color === 'darkorange') {
         note8.style.color = 'dimgrey';
     } else {
@@ -699,6 +707,7 @@ function click8() {
 
 function click9() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note9.style.color === 'darkorange') {
         note9.style.color = 'dimgrey';
     } else {
@@ -779,6 +788,7 @@ function click9() {
 
 function click10() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note10.style.color === 'darkorange') {
         note10.style.color = 'dimgrey';
     } else {
@@ -859,6 +869,7 @@ function click10() {
 
 function click11() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note11.style.color === 'darkorange') {
         note11.style.color = 'dimgrey';
     } else {
@@ -939,6 +950,7 @@ function click11() {
 
 function click12() {
     'use strict';
+    document.getElementById('instruction').style.display = 'none';
     if (note12.style.color === 'darkorange') {
         note12.style.color = 'dimgrey';
     } else {
@@ -1134,5 +1146,102 @@ function x15() {
     }
     if (note12.style.color = 'darkorange') {
         note12.style.color = 'dimgrey';
+    }
+}
+
+
+
+
+
+
+/* NEWS PAGE */
+function readMore1() {
+    'use strict';
+    var x = document.getElementById('hidden1');
+    var y = document.getElementById('readmore1');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+        y.innerHTML = 'Read More';
+    } else {
+        x.style.display = 'block';
+        y.innerHTML = 'Read Less';
+    }
+}
+
+function readMore2() {
+    'use strict';
+    var x = document.getElementById('hidden2');
+    var y = document.getElementById('readmore2');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+        y.innerHTML = 'Read More';
+    } else {
+        x.style.display = 'block';
+        y.innerHTML = 'Read Less';
+    }
+}
+
+function readMore3() {
+    'use strict';
+    var x = document.getElementById('hidden3');
+    var y = document.getElementById('readmore3');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+        y.innerHTML = 'Read More';
+    } else {
+        x.style.display = 'block';
+        y.innerHTML = 'Read Less';
+    }
+}
+
+function readMore4() {
+    'use strict';
+    var x = document.getElementById('hidden4');
+    var y = document.getElementById('readmore4');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+        y.innerHTML = 'Read More';
+    } else {
+        x.style.display = 'block';
+        y.innerHTML = 'Read Less';
+    }
+}
+
+function readMore5() {
+    'use strict';
+    var x = document.getElementById('hidden5');
+    var y = document.getElementById('readmore5');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+        y.innerHTML = 'Read More';
+    } else {
+        x.style.display = 'block';
+        y.innerHTML = 'Read Less';
+    }
+}
+
+function readMore6() {
+    'use strict';
+    var x = document.getElementById('hidden6');
+    var y = document.getElementById('readmore6');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+        y.innerHTML = 'Read More';
+    } else {
+        x.style.display = 'block';
+        y.innerHTML = 'Read Less';
+    }
+}
+
+function readMore7() {
+    'use strict';
+    var x = document.getElementById('hidden7');
+    var y = document.getElementById('readmore7');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+        y.innerHTML = 'Read More';
+    } else {
+        x.style.display = 'block';
+        y.innerHTML = 'Read Less';
     }
 }

@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" id="timelinehtml">
 <head>
   <meta charset="utf-8">
 
@@ -16,6 +16,7 @@
         <h2>TOWNSVILLE, QUEENSLAND, AUSTRALIA</h2>
         <nav>
             <ul>
+                <li><a href="index.html">HOME</a></li>
                 <div id="navabout" onclick="aboutExpand(navaboutexp)"><li>ABOUT</li></div>
                 <div id="navaboutexp"><li><a href="history.html">HISTORY</a></li>
                 <li><a href="timeline.html">TIMELINE</a></li></div>
@@ -36,8 +37,8 @@
     </div>
     <div id="main">
         <h3>Timeline</h3>
-        <img src="images/about/lines.png" width="2000px">
-    
+        <div id="timelinediv"><img src="images/about/lines.png" width="2000px">&nbsp;</div>
+    <p id="instruction">Click on a note below to explore.</p>
     <div id="y2003">
         <div id="x03" onclick="x03()">x</div>
     <h4>2003</h4>
@@ -200,7 +201,6 @@ This concert was hired in by Townsville Civic Theatre, another first for BRO. As
 Rounding out the year was A Musical Feast in November conducted by Mark Shiell. Mark commented that he thought the orchestra and improved musically since he last worked with the BRO, pleasing feedback from a professional. A potpourri of music that was enjoyed by all.
 2016 was soon upon us commencing with the launch at the Pier restaurant with a performance from the Strings and a last minute addition of soprano Siobhan Patrick, a spell binding performance that I think will lead to further collaborations with her. The launch also allowed me to reinforce our Commitment to TPAC (www.tpac.net.au) while we had the Mayor’s full attention. This continues to be an ongoing concern that requires all of us to push TPAC forward at every opportunity.
     </div>
-        
         <div id="note1" onclick="click1()">♫</div>
         <div id="note2" onclick="click2()">♪</div>
         <div id="note3" onclick="click3()">♩</div>
@@ -212,7 +212,7 @@ Rounding out the year was A Musical Feast in November conducted by Mark Shiell. 
         <div id="note9" onclick="click9()">♬</div>
         <div id="note10" onclick="click10()">♩</div>
         <div id="note11" onclick="click11()">♪</div>
-        <div id="note12" onclick="click12()">♫</div>        
+        <div id="note12" onclick="click12()">♫</div>
 </div>
 </body>
 </html>
