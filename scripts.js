@@ -1245,3 +1245,8 @@ function readMore7() {
         y.innerHTML = 'Read Less';
     }
 }
+
+
+
+
+/* PEOPLE */

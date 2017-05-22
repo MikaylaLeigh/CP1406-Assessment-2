@@ -263,12 +263,12 @@ body {
     background: #f9f9f9;
 }
 
-#main, #gallerymain, #historymain, #newsmain {
+#main, #gallerymain, #historymain, #newsmain, #people {
     margin-left: 360px;
     min-width: 670px;
 }
 
-#main h3, #gallerymain h3, #historymain h3, #newsmain h3 {
+#main h3, #gallerymain h3, #historymain h3, #newsmain h3, #people h3 {
     margin-left: 60px;
     letter-spacing: 0.2em;
     font-size: 2.5em;
@@ -284,7 +284,7 @@ body {
     overflow: scroll;
 }
 
-#main h4 {
+#main h4, #people h4 {
     letter-spacing: 0.2em;
     font-size: 1.5em;
     margin: 0;
@@ -485,7 +485,7 @@ body {
     width: 80%;
     border: 4px solid #ff8746;
     border-radius: 30px;
-    padding: 25px;
+    padding: 27px;
 }
 
 .news a {
@@ -509,13 +509,18 @@ body {
 }
 
 #readmore1, #readmore2, #readmore3, #readmore4, #readmore5, #readmore6, #readmore7 {
-    display: inline;
     background: #ff8746;
     padding: 6px;
     border-radius: 10px;
     color: #FFF;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 360px;
+    text-align: center;
+    width: 100px;
 }
 
 .news img {
@@ -527,4 +532,191 @@ body {
 
 #hidden1, #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7 {
     display: none;
+}
+
+/* PEOPLE */
+#main table {
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h5 {
+    letter-spacing: 0.2em;
+    font-size: 1.5em;
+    margin: 0;
+    padding-left: 10px;
+    color: #2fbac3;
+}
+
+.tableleft {
+    height: 35px;
+    width: 185px;
+    font-weight: bold;
+    color: #777;
+}
+
+.tableright {
+    color: #ccc;
+}
+
+#left {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#right {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#center {
+    margin-top: 50px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#left a, #right a, #center a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+h6 {
+    font-size: 1em;
+    padding-top: 50%;
+    margin: 0;
+    margin-bottom: 0px;
+    display: block;
+    color: #ff8746;
+    text-shadow: 0px 0px 5px #444;
+}
+
+#left p, #right p, #center p {
+    margin: 0;
+    font-size: 0.8em;
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jennycarr, #caroldallosto, #stephenfrewenlord, #donnamcmahon, #alannixon, #jacintapayne, #davidpearce, #mariodobernig, #craigjohnson, #davidlawrence, #richardmcintyre, #seanoboyle, #markshiell, #raymondyong, #arthurathan, #jenniferbradstreet {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-left: 10px;
+    margin-right: auto;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+#jennycarr1, #caroldallosto1, #stephenfrewenlord1, #donnamcmahon1, #alannixon1, #jacintapayne1, #davidpearce1, #mariodobernig1, #craigjohnson1, #davidlawrence1, #richardmcintyre1, #seanoboyle1, #markshiell1, #raymondyong1, #arthurathan1, #jenniferbradstreet1 {
+    display: none;
+}
+
+#jennycarr:hover #jennycarr1, #caroldallosto:hover #caroldallosto1, #stephenfrewenlord:hover #stephenfrewenlord1, #donnamcmahon:hover #donnamcmahon1, #alannixon:hover #alannixon1, #jacintapayne:hover #jacintapayne1, #davidpearce:hover #davidpearce1, #mariodobernig:hover #mariodobernig1, #craigjohnson:hover #craigjohnson1, #davidlawrence:hover #davidlawrence1, #richardmcintyre:hover #richardmcintyre1, #seanoboyle:hover #seanoboyle1, #markshiell:hover #markshiell1, #raymondyong:hover #raymondyong1, #arthurathan:hover #arthurathan1, #jenniferbradstreet:hover #jenniferbradstreet1 {
+    display: block;
+}
+
+#jennycarr {
+    background-image: url(images/people/jennycarr.png);
+}
+
+#caroldallosto {
+    background-image: url(images/people/caroldallosto.png);
+}
+
+#stephenfrewenlord {
+    background-image: url(images/people/stephenfrewenlord.png);
+}
+
+#donnamcmahon {
+    background-image: url(images/people/donnamcmahon.png);
+}
+
+#alannixon {
+    background-image: url(images/people/alannixon.png);
+}
+
+#jacintapayne {
+    background-image: url(images/people/jacintapayne.png);
+}
+
+#davidpearce {
+    background-image: url(images/people/anon.png);
+}
+
+#mariodobernig {
+    background-image: url(images/people/mariodobernig.png);
+}
+
+#craigjohnson {
+    background-image: url(images/people/craigjohnson.png);
+}
+
+#davidlawrence {
+    background-image: url(images/people/davidlawrence.png);
+}
+
+#richardmcintyre {
+    background-image: url(images/people/richardmcintyre.png);
+}
+
+#seanoboyle {
+    background-image: url(images/people/seanoboyle.png);
+}
+
+#markshiell {
+    background-image: url(images/people/markshiell.png);
+}
+
+#raymondyong {
+    background-image: url(images/people/raymondyong.png);
+}
+
+#arthurathan {
+    background-image: url(images/people/arthurathan.png);
+}
+
+#jenniferbradstreet {
+    background-image: url(images/people/jenniferbradstreet.png);
+}
+
+/* SPECIFIC PEOPLE PAGES */
+#content {
+    background: #eee;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+#people img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 20px;
+    border: 4px solid #ff8746;
+    border-radius: 30px;
+}
+
+#content p {
+    margin-right: 15px;
+    line-height: 22px;
+}
+
+#people h5 {
+    margin: 10px;
+    padding-top: 5px;
 }
