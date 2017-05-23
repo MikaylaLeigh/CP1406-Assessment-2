@@ -1250,3 +1250,35 @@ function readMore7() {
 
 
 /* PEOPLE */
+
+function fadeIn() {
+    'use strict'
+    var dark = document.getElementById('popupdark');
+    var x = document.getElementById('formx');
+    var form = document.getElementById('popupform');
+    if (dark.style.display === 'block') {
+        dark.style.display = 'none';
+        x.style.display = 'none';
+        form.style.display = 'none';
+    } else {
+        dark.style.display = 'block';
+        x.style.display = 'block';
+        form.style.display = 'block';
+    }
+}
+
+function fadeOut() {
+    'use strict'
+    var dark = document.getElementById('popupdark');
+    var x = document.getElementById('formx');
+    var form = document.getElementById('popupform');
+    if (dark.style.display === 'none') {
+        dark.style.display = 'block';
+        x.style.display = 'block';
+        form.style.display = 'block';
+    } else {
+        dark.style.display = 'none';
+        x.style.display = 'none';
+        form.style.display = 'none';
+    }
+}
