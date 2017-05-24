@@ -1282,3 +1282,22 @@ function fadeOut() {
         form.style.display = 'none';
     }
 }
+
+function submitForm() {
+    'use strict'
+    var justform = document.getElementById('justform');
+    var submit = document.getElementById('submit');
+    var btn = document.getElementById('submitbutton');
+    var close = document.getElementById('closebutton');
+    if (justform.style.display === 'none') {
+        justform.style.display = 'block';
+        submit.style.display = 'none';
+        btn.style.display = 'block';
+        close.style.display = 'none';
+    } else {
+        justform.style.display = 'none';
+        submit.style.display = 'block';
+        btn.style.display = 'none';
+        close.style.display = 'inline-block';
+    }
+}

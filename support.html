@@ -37,11 +37,12 @@
     </div>
     <div id="supportmain">
         <h3>Support Us</h3>
-        <div id="layout"><div class="donateplay" style="width: 40%;"><h4>Become a Sponsor or Donate</h4>
+        <div id="layout"><div class="donateplay"><h4>Become a Sponsor or Donate</h4>
             <p>The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible.
 Help us continue to provide quality entertainment for the Townsville community by supporting the orchestra.</p></div>
         <div class="donateplay"><h4>Become a Member or Player</h4>
-            <span id="popup" onclick="fadeIn()">Sign Up Online</span> or Printable Form</div></div>
+            <span id="popup" onclick="fadeIn()">Sign Up Online</span> or;
+            <br><a href="membership%20form%20electronic.docx" target="_blank">Download Printable Form</a></div></div>
         <div class="other"><h4>Become an Orchestra Benefactor</h4></div>
         <div class="other"><h4>Current Barrier Reef Orchestra Benefactor Role </h4></div>
         </div>
@@ -49,50 +50,105 @@ Help us continue to provide quality entertainment for the Townsville community b
         <div id="formx" onclick="fadeOut()">X</div>
         <div id="popupdark">&nbsp;</div>
         <div id="popupform">
-            <div id="form"><form>
+            <div id="form"><div id="justform"><form>
                 <h4>Barrier Reef Orchestra Membership</h4>
-                <b>Membership:</b>
-            <br><input type="radio" name="renew"> Renewal Membership <input type="radio" name="renew"> New Membership
-                <br><i>Membership Type:</i>
-                <br><input type="radio" name="type"> Adult <input type="radio" name="type"> Family <input type="radio" name="type"> Student <input type="radio" name="type"> Concession
-                <br><b>Student/Concession Number:</b> <input type="text" name="student#" value="Student/Concession Number">
-                
-                <br><br><i>Applicant Details:</i>
-                <br><b>Title:</b> <input type="text" name="title" value="Title/s">
-                <br><b>First Name:</b> <input type="text" name="firstname" value="First Name">
-                <br><b>Last Name:</b> <input type="text" name="lastname" value="Last Name">
-                
-                <br><br><i>Additional Member Details:</i>
-                <br><b>Person 1:</b> <input type="text" name="name1" value="First Name"> <input type="text" name="last1" value="Last Name"> <input type="date" name="dob1">
-                <br><b>Person 2:</b> <input type="text" name="name2" value="First Name"> <input type="text" name="last2" value="Last Name"> <input type="date" name="dob2">
-                <br><b>Person 3:</b> <input type="text" name="name3" value="First Name"> <input type="text" name="last3" value="Last Name"> <input type="date" name="dob3">
-                <br><b>Person 4:</b> <input type="text" name="name4" value="First Name"> <input type="text" name="last4" value="Last Name"> <input type="date" name="dob4">
-                
-                <br><b>Address:</b> <input type="text" name="ship-address" value="Street Address"> <input type="text" name="ship-city" value="Town/Suburb">
-                <br><input type="text" name="ship-state" value="State"> <input type="text" name="ship-zip" value="Postcode">
-                <br><b>Email:</b> <input type="text" name="email" value="Email">
-                <br><b>Phone:</b> <input type="tel" name="phone" value="Mobile Phone">
-                <br><input type="tel" name="home-phone" value="Home Phone">
-                
-                <br><br><i>Payment Options:</i>
-                <br><input type="radio" name="cash"> Cash $<input type="text" name="cashamount" value="0.00"> <input type="radio" name="cheque"> Cheque $<input type="text" name="chequeamount" value="0.00">
-                <br><input type="radio" name="direct"> Direct Debit $<input type="text" name="directamount" value="0.00">
-                <br><span id="directdebit">NQ Ensembles Inc.  BSB 034 222  Account: 17 3033 (Please include family name as payment reference)</span>
-                
-                <br><br><i>How can you help the Orchestra?</i>
-                <br><input type="checkbox" name="playing"> Playing in the Orchestra or Ensembles
+                <table>
+                    <tr>
+                        <td>Membership:</td>
+                        <td><input type="radio" name="renew"> Renewal Membership <input type="radio" name="renew"> New Membership</td>
+                    </tr>
+                    <tr>
+                        <td>Membership Type:</td>
+                        <td><input type="radio" name="type"> Adult <input type="radio" name="type"> Family <input type="radio" name="type"> Student <input type="radio" name="type"> Concession</td>
+                    </tr>
+                    <tr>
+                        <td>Student/Concession Number:</td>
+                        <td><input type="text" name="student#" placeholder="Student/Concession Number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Applicant Details:</td>
+                        <td colspan="2">Additional Member Details</td>
+                    </tr>
+                    <tr>
+                        <td>Title:</td>
+                        <td><input type="text" name="title" placeholder="Title/s" id="inputtitle"></td>
+                        <td>Person 1:</td>
+                        <td><input type="text" name="name1" placeholder="First Name"> <input type="text" name="last1" placeholder="Last Name"> <input type="date" name="dob1"></td>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="firstname" placeholder="First Name"></td>
+                        <td>Person 2:</td>
+                        <td><input type="text" name="name2" placeholder="First Name"> <input type="text" name="last2" placeholder="Last Name"> <input type="date" name="dob2"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="lastname" placeholder="Last Name"></td>
+                        <td>Person 3:</td>
+                        <td><input type="text" name="name3" placeholder="First Name"> <input type="text" name="last3" placeholder="Last Name"> <input type="date" name="dob3"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email" placeholder="Email"></td>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td><input type="tel" name="phone" placeholder="Mobile Phone"> <input type="tel" name="home-phone" placeholder="Home Phone"></td>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td colspan="2"><input type="text" name="ship-address" placeholder="Street Address" id="inputaddress">
+                        <input type="text" name="ship-city" placeholder="Town/Suburb" id="inputtown"> <input type="text" name="ship-state" placeholder="State" id="inputstate"> <input type="text" name="ship-zip" placeholder="Postcode" id="inputzip"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Payment Options:</td>
+                        <td><input type="radio" name="cash"> Cash $<input type="text" name="cashamount" placeholder="0.00"></td>
+                        <td><input type="radio" name="cheque"> Cheque $<input type="text" name="chequeamount" placeholder="0.00"></td>
+                        <td><input type="radio" name="direct"> Direct Debit $<input type="text" name="directamount" placeholder="0.00">
+                        <br><span id="directdebit">NQ Ensembles Inc.  BSB 034 222  Account: 17 3033 (Please include family name as payment reference)</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>How can you help the Orchestra?</td>
+                        <td><input type="checkbox" name="playing"> Playing in the Orchestra or Ensembles
                 <br><input type="checkbox" name="admin"> Management/Administration
                 <br><input type="checkbox" name="support"> Player Support
                 <br><input type="checkbox" name="fundraising"> Fundraising
                 <br><input type="checkbox" name="promo"> Marketing/Promotion
                 <br><input type="checkbox" name="sponsor"> Sponsorship
-                <br><input type="checkbox" name="publish"> Desktop Publishing
+                <br><input type="checkbox" name="publish"> Desktop Publishing</td>
+                        <td>Player Registration:</td>
+                        <td>Instrument/s Played: <input type="text" name="instruments" placeholder="List instruments played.">
+                <br>Qualifications: <input type="text" name="qualifications" placeholder="List qualifications.">
+                <br>Experience: <input type="text" name="exp" placeholder="List prior experience."></td>
+                    </tr>
+            </table>
+            </form>
                 
-                <br><br><i>Player Registration</i>
-                <br><b>Instrument/s Played:</b> <input type="text" name="instruments" value="List instruments played.">
-                <br><b>Qualifications:</b> <input type="text" name="qualifications" value="List qualifications.">
-                <br><b>Experience:</b> <input type="text" name="exp" value="List prior experience.">
-            </form></div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>
+                <br><br><div id="submitbutton" onclick="submitForm()">Submit</div>
+            <p id="submit">Thank you. Your membership application form has been submitted and you will soon receive an email with additional information.</p>
+                <div id="closebutton" onclick="fadeOut()">Close</div>
+            </div>
         </div>
 </body>
 </html>
