@@ -23,7 +23,7 @@
                 <li><a href="news.html">NEWSFEED</a></li>
                 <div id="navconcerts" onclick="concertsExpand(navconcertsexp)"><li>CONCERTS</li></div>
                 <div id="navconcertsexp"><li><a href="concerts.html">UPCOMING CONCERTS</a></li>
-                <li><a href="repertoire.html">REPERTOIRE</a></li></div>
+                <li><a href="BRO%20Repertoire.pdf" target="_blank">REPERTOIRE</a></li></div>
                 <li><a href="people.html">PEOPLE</a></li>
                 <li><a href="support.html">SUPPORT US</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -43,55 +43,129 @@ Help us continue to provide quality entertainment for the Townsville community b
         <div class="donateplay"><h4>Become a Member or Player</h4>
             <span id="popup" onclick="fadeIn()">Sign Up Online</span> or;
             <br><a href="membership%20form%20electronic.docx" target="_blank">Download Printable Form</a></div></div>
-        <div class="other"><h4>Become an Orchestra Benefactor</h4></div>
-        <div class="other"><h4>Current Barrier Reef Orchestra Benefactor Role </h4></div>
+        <div class="other"><h4>Become an Orchestra Benefactor</h4>
+        <p>You are invited to become an Orchestra Benefactor and assist Townsville’s Community Orchestra with your personal and publicly acknowledged support which encourages others to do the same.</p>
+        <p>With a philanthropic gift of $200 or more (we leave that up to you) you can become an Orchestra Benefactor and be placed on our Benefactor roll for twelve months. This roll will be published in each concert program and on our website for twelve months. As a benefactor you will also receive two complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season’s Launch function.
+        <br>Donations are tax deductible.
+        <br>For more information contact Simon McConnell 0418 776 961, <a href="mailto:brotownsville@gmail.com">brotownsville@gmail.com</a></p>
+            <p style="text-align: center;"><b>To become a benefactor, please fill out the following form
+                <br><a href="north-queensland-orchestra-benefactor-form.pdf" target="_blank">or Download Printable Form</a></b>
+            <br><span class="red">*</span> required fields</p>
+            <form>
+                <table id="benefactor">
+                    <tr>
+                        <td class="columnright">&nbsp;Please place me/us on the benefactor roll as:</td>
+                        <td style="width: 30px">
+                        <td><input type="text" name="benefactorname" placeholder="Leave blank to remain anonymous." id=anon></td>
+                    </tr>
+                    <tr>
+                        <td class="columnright">I wish to contribute: <span class="red">*</span></td>
+                        <td></td>
+                        <td>$<input type="text" name="amount" placeholder="0.00" id="money"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="columncentered"><input type="radio" name="method"> Cash <input type="radio" name="method"> Cheque <input type="radio" name="method">EFTPOS</td>
+                    </tr>
+                    <tr>
+                        <td class="columnright">Email: <span class="red">*</span></td>
+                        <td>
+                        <td><input type="text" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td class="columnright">Phone: </td>
+                        <td>
+                        <td><input type="tel" name="phone" placeholder="Mobile Phone"> <input type="tel" name="home-phone" placeholder="Home Phone"></td>
+                    </tr>
+                    <tr>
+                        <td class="columnright">Address: <span class="red">*</span></td>
+                        <td>
+                        <td><input type="text" name="ship-address" placeholder="Street Address" id="inputaddress">
+                        <input type="text" name="ship-city" placeholder="Town/Suburb" id="inputtown"> <input type="text" name="ship-state" placeholder="State" id="inputstate"> <input type="text" name="ship-zip" placeholder="Postcode" id="inputzip">&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td colspan="3" class="columncentered"><div id="submitbutton" onclick="benefactorSubmit()" style="margin-bottom: 10px;">Submit</div>
+</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="other"><h4>Current Barrier Reef Orchestra Benefactor Role</h4>
+        <p>We wish to thank our benefactors for their generous support:</p>
+        <ul>
+            <li>Dr Kevin Arlett</li>
+            <li>Carol Dall’Osto</li>
+            <li>Ray Gartrell</li>
+            <li>Bruce Gibson and Dorothy Gibson-Wilde O.A.M.</li>
+            <li>Dr Kerry Gillespie</li>
+            <li>Peter Honeycombe</li>
+            <li>Judy Hunter O.A.M.</li>
+            <li>Ewen Jones MP</li>
+            <li>David and Janine Kippin</li>
+            <li>Simon and Lorraine McConnell</li>
+            <li>Senator Ian McDonald</li>
+            <li>Janice Mayes</li>
+            <li>Terry O’Toole</li>
+            <li>Bronia and Neil Renison</li>
+            <li>Andrew Ryder</li>
+            <li>Nita Vasilescu</li>
+            <li>Desley Wheeler</li>
+            <li>Graham Wheeler</li>
+            <li>As well as all of our anonymous contributors!</li>
+        </ul>
+        </div>
         </div>
         
         <div id="formx" onclick="fadeOut()">X</div>
         <div id="popupdark">&nbsp;</div>
         <div id="popupform">
-            <div id="form"><div id="justform"><form>
+            <div id="form">
+                <div id="justform"><form>
                 <h4>Barrier Reef Orchestra Membership</h4>
+                <span class="red">*</span> required fields
                 <table>
                     <tr>
-                        <td>Membership:</td>
-                        <td><input type="radio" name="renew"> Renewal Membership <input type="radio" name="renew"> New Membership</td>
+                        <td><b>Membership:</b> <span class="red">*</span></td>
+                        <td colspan="3"><input type="radio" name="renew"> Renewal Membership <input type="radio" name="renew"> New Membership</td>
                     </tr>
                     <tr>
-                        <td>Membership Type:</td>
-                        <td><input type="radio" name="type"> Adult <input type="radio" name="type"> Family <input type="radio" name="type"> Student <input type="radio" name="type"> Concession</td>
+                        <td><b>Membership Type:</b> <span class="red">*</span></td>
+                        <td colspan="3"><input type="radio" name="type"> Adult <input type="radio" name="type"> Family <input type="radio" name="type"> Student <input type="radio" name="type"> Concession</td>
+                    </tr>
+                    <tr>
+                        <td>Membership Fees:</td>
+                        <td colspan="3">Adult $30. Family $60. Full-time Student $15. Under 18 $15. Concession $15.</td>
                     </tr>
                     <tr>
                         <td>Student/Concession Number:</td>
-                        <td><input type="text" name="student#" placeholder="Student/Concession Number"></td>
+                        <td colspan="3"><input type="text" name="student#" placeholder="Student/Concession Number" id="studentno"></td>
                     </tr>
                     <tr>
                         <td colspan="4">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Applicant Details:</td>
-                        <td colspan="2">Additional Member Details</td>
+                        <td colspan="2" class="columncentered"><b>Applicant Details:</b></td>
+                        <td colspan="2" class="columncentered"><b>Additional Member Details:</b></td>
                     </tr>
                     <tr>
-                        <td>Title:</td>
+                        <td>Title: <span class="red">*</span></td>
                         <td><input type="text" name="title" placeholder="Title/s" id="inputtitle"></td>
-                        <td>Person 1:</td>
+                        <td class="columncentered">Person 1:</td>
                         <td><input type="text" name="name1" placeholder="First Name"> <input type="text" name="last1" placeholder="Last Name"> <input type="date" name="dob1"></td>
                     </tr>
                     <tr>
-                        <td>First Name:</td>
-                        <td><input type="text" name="firstname" placeholder="First Name"></td>
-                        <td>Person 2:</td>
+                        <td>First Name: <span class="red">*</span></td>
+                        <td><input type="text" name="firstname" placeholder="First Name" required></td>
+                        <td class="columncentered">Person 2:</td>
                         <td><input type="text" name="name2" placeholder="First Name"> <input type="text" name="last2" placeholder="Last Name"> <input type="date" name="dob2"></td>
                     </tr>
                     <tr>
-                        <td>Last Name:</td>
-                        <td><input type="text" name="lastname" placeholder="Last Name"></td>
-                        <td>Person 3:</td>
+                        <td>Last Name: <span class="red">*</span></td>
+                        <td><input type="text" name="lastname" placeholder="Last Name" required></td>
+                        <td class="columncentered">Person 3:</td>
                         <td><input type="text" name="name3" placeholder="First Name"> <input type="text" name="last3" placeholder="Last Name"> <input type="date" name="dob3"></td>
                     </tr>
                     <tr>
-                        <td>Email:</td>
+                        <td>Email: <span class="red">*</span></td>
                         <td><input type="text" name="email" placeholder="Email"></td>
                         <td colspan="2">&nbsp;</td>
                     </tr>
@@ -101,25 +175,25 @@ Help us continue to provide quality entertainment for the Townsville community b
                         <td colspan="2">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>Address:</td>
+                        <td>Address: <span class="red">*</span></td>
                         <td colspan="2"><input type="text" name="ship-address" placeholder="Street Address" id="inputaddress">
                         <input type="text" name="ship-city" placeholder="Town/Suburb" id="inputtown"> <input type="text" name="ship-state" placeholder="State" id="inputstate"> <input type="text" name="ship-zip" placeholder="Postcode" id="inputzip"></td>
                     </tr>
                     <tr>
                         <td colspan="4">&nbsp;</td>
                     </tr>
-                    <tr>
-                        <td>Payment Options:</td>
-                        <td><input type="radio" name="cash"> Cash $<input type="text" name="cashamount" placeholder="0.00"></td>
-                        <td><input type="radio" name="cheque"> Cheque $<input type="text" name="chequeamount" placeholder="0.00"></td>
-                        <td><input type="radio" name="direct"> Direct Debit $<input type="text" name="directamount" placeholder="0.00">
+                    <tr id="rowhighlight">
+                        <td>&nbsp;Payment Options: <span class="red">*</span></td>
+                        <td class="columncentered"><input type="radio" name="cash"> Cash $<input type="text" name="cashamount" placeholder="0.00" id="money"></td>
+                        <td class="columncentered"><input type="radio" name="cheque"> Cheque $<input type="text" name="chequeamount" placeholder="0.00" id="money"></td>
+                        <td class="columncentered"><input type="radio" name="direct"> Direct Debit $<input type="text" name="directamount" placeholder="0.00" id="money">
                         <br><span id="directdebit">NQ Ensembles Inc.  BSB 034 222  Account: 17 3033 (Please include family name as payment reference)</span></td>
                     </tr>
                     <tr>
                         <td colspan="4">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>How can you help the Orchestra?</td>
+                        <td><b>How can you help the Orchestra?</b>&nbsp;<span class="red">*</span></td>
                         <td><input type="checkbox" name="playing"> Playing in the Orchestra or Ensembles
                 <br><input type="checkbox" name="admin"> Management/Administration
                 <br><input type="checkbox" name="support"> Player Support
@@ -127,10 +201,10 @@ Help us continue to provide quality entertainment for the Townsville community b
                 <br><input type="checkbox" name="promo"> Marketing/Promotion
                 <br><input type="checkbox" name="sponsor"> Sponsorship
                 <br><input type="checkbox" name="publish"> Desktop Publishing</td>
-                        <td>Player Registration:</td>
-                        <td>Instrument/s Played: <input type="text" name="instruments" placeholder="List instruments played.">
-                <br>Qualifications: <input type="text" name="qualifications" placeholder="List qualifications.">
-                <br>Experience: <input type="text" name="exp" placeholder="List prior experience."></td>
+                        <td><b>Player Registration:</b></td>
+                        <td>Instrument/s Played:<br><input type="text" name="instruments" placeholder="List instruments played." id="instruments">
+                            <br>Qualifications:<br><textarea rows="3" cols="40" name="qualifications" placeholder="List qualifications."></textarea>
+                <br>Experience:<br><textarea rows="3" cols="40" name="exp" placeholder="List prior experience."></textarea></td>
                     </tr>
             </table>
             </form>

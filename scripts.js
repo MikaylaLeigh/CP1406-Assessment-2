@@ -1301,3 +1301,15 @@ function submitForm() {
         close.style.display = 'inline-block';
     }
 }
+
+function benefactorSubmit() {
+    'use strict'
+    var form = document.getElementById('benefactor');
+    form.innerHTML = 'Thank you for your contribution. If you chose not to remain anonymous, your name will appear on the benefactor role within 5 business days.'
+}
+
+function contactSubmit() {
+    'usestrict'
+    var contact = document.getElementById('contacttable');
+    contact.innerHTML = 'Thank you, we have received your message and you will receive a reply by email shortly.'
+}
